@@ -34,8 +34,8 @@ __LAYOUT_AXIS=['autorange','autotick','backgroundcolor','categoryarray','categor
 			   'ticksuffix','ticktext','ticktextsrc','tickvals','tickvalssrc','tickwidth','titlefont',
 			   'zeroline','zerolinecolor','zerolinewidth']
 
-__LAYOUT_AXIS_X=['xaxis_'+_ for _ in go.XAxis().__dir__()]
-__LAYOUT_AXIS_Y=['yaxis_'+_ for _ in go.YAxis().__dir__()]
+__LAYOUT_AXIS_X=['xaxis_'+_ for _ in go.layout.XAxis().__dir__()]
+__LAYOUT_AXIS_Y=['yaxis_'+_ for _ in go.layout.YAxis().__dir__()]
 
 __LAYOUT_KWARGS = []
 [__LAYOUT_KWARGS.extend(_) for _ in [__LAYOUT_VALID_KWARGS,__SHAPES_KWARGS,__GEO_KWARGS,__ANN_KWARGS,__LAYOUT_AXIS,
