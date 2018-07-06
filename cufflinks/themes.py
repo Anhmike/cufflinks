@@ -12,16 +12,16 @@ THEMES = {
 				'plot_bgcolor' : 'grey14',
 				'yaxis1' : YAxis({
 					'tickfont' : {'color':'grey10'},
-					'gridcolor' : 'lightivory',
+					'gridcolor' : 'lightyellow',
 					'titlefont' : {'color':'grey10'},
-					'zerolinecolor' : 'lightivory',
+					'zerolinecolor' : 'lightyellow',
 					'showgrid' : True
 				}),
 				'xaxis1' : XAxis({
 					'tickfont' : {'color':'grey10'},
-					'gridcolor' : 'lightivory',
+					'gridcolor' : 'lightyellow',
 					'titlefont' : {'color':'grey10'},
-					'zerolinecolor' : 'lightivory',
+					'zerolinecolor' : 'lightyellow',
 					'showgrid' : True
 				}),
 				'titlefont' : {'color':'charcoal'}
