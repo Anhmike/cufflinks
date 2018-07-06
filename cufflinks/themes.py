@@ -9,7 +9,7 @@ THEMES = {
 			'layout' : {
 				'legend' : {'bgcolor':'white','font':{'color':'grey'}},
 				'paper_bgcolor' : 'white',
-				'plot_bgcolor' : 'grey14',
+				'plot_bgcolor' : 'grey',
 				'yaxis1' : YAxis({
 					'tickfont' : {'color':'grey'},
 					'gridcolor' : 'lightyellow',
