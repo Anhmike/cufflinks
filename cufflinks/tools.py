@@ -858,7 +858,7 @@ def get_subplots(rows=1,cols=1,
 										   shared_yaxes=shared_yaxes,print_grid=False,
 											start_cell=start_cell,**kwargs)
 	for k,v in list(layout.items()):
-		if not isinstance(v,go.XAxis) and not isinstance(v,go.YAxis):
+		if not isinstance(v,go.layout.XAxis) and not isinstance(v,go.layout.YAxis):
 			sp['layout'].update({k:v})
 
 	# if 'subplot_titles' in kwargs:
@@ -874,9 +874,9 @@ def get_subplots(rows=1,cols=1,
 			sp_item.update({k:v})
 
 	for k,v in list(sp['layout'].items()):
-		if isinstance(v,go.XAxis):
+		if isinstance(v,go.layout.XAxis):
 			update_items(v,layout,'xaxis1')
-		elif isinstance(v,go.YAxis):
+		elif isinstance(v,go.layout.YAxis):
 			update_items(v,layout,'xaxis1')
 
 	return sp
@@ -1099,7 +1099,7 @@ def _set_axis(self,traces,on=None,side='right',title=''):
 			try:
 				new_axis=fig.axis['dom']['y'][domain][side]
 			except KeyError:
-				axis=go.YAxis(fig.axis['def'][curr_y].copy())
+				axis=go.layout.YAxis(fig.axis['def'][curr_y].copy())
 				### check overlaying values
 				axis.update(title=title,overlaying=curr_y,side=side,anchor=curr_x)
 				axis_idx=str(fig.axis['len']['y']+1)
